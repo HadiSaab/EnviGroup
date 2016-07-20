@@ -1,23 +1,43 @@
+/* Remove the bullets and margins and padding from the list*/
 ul {
-    list-style-type: none;
+    list-style-type: none; /* list-style removes the bullets*/
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
+
 }
 
+/*This is to centre the text in the clickable area*/
 li {
     float: left;
 }
 
+/*This is for styling the <a> inside the list*/
 li a {
-    display: block;
-    color: white;
+    display: block; /*this make the whole area clickable, not just the text*/
     text-align: center;
-    padding: 14px 16px;
+    margin: auto; /*adjusts the space around the text in nav bar*/
+    padding: 14px 16px; /*this adjusts the nav bar size*/
+    background-color: black; /* this is added to show the space for the link area*/
+    color: white;
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
+
+/*Change the link colour on hover*/
+li a:hover{
+    background-color: midnightblue;
+    color: white;
+}
+
+/*This .active class will show user what page they are on, need to add the class in the html*/
+li a.active{
+    background-color: forestgreen; /*some colour that matches the logo*/
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
