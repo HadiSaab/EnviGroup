@@ -18,7 +18,7 @@ li a {
     display: block; /*this make the whole area clickable, not just the text*/
     text-align: center;
     margin: auto; /*adjusts the space around the text in nav bar*/
-    padding: 14px 16px; /*this adjusts the nav bar size*/
+    padding: 14px 85px; /*this adjusts the nav bar size*/
     background-color: black; /* this is added to show the space for the link area*/
     color: white;
     text-decoration: none;
