@@ -8,7 +8,9 @@
     <!-- this is for the size, so if mobile show mobile size and if ipad show ipad size etc -->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>EnviGroup Pty Ltd</title>
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='custom.css' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,7 +34,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- Need to resize the logo to fit in line with the navbar -->
-                <a href="http://www.envigroup.com.au/" class="navbar-left"><img src="http://envigroup.com.au/Logo.jpg"></a>
+                <a href="http://www.envigroup.com.au/" class="navbar-left">
+                    <!-- This is the logo, re-add when ready<img src="http://envigroup.com.au/Logo.jpg"> -->
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -49,6 +53,94 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- this col-lg adjusts the size of the contact form -->
+            <div class="col-lg-50 col-lg-offset-5">
+
+                <!-- I needed to add these because i couldnt pull the contact form down, need to figure out better
+                solution -->
+                <p>Space</p>
+                <p>Space</p>
+                <p>Space</p>
+                <h1>EnviGroup Contact Form</h1>
+
+                <p class="lead">Get in touch</p>
+
+                <!-- This is where the contact form code starts -->
+                <form id="contact-form" method="post" action="contact.php" role="form">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <!-- cold-md- adjusts the length of the form -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Firstname*</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname*</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email*</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Contact Phone No.</label>
+                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your contact phone number">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message*</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="validator.js"></script>
+    <script src="contact.js"></script>
 
 
 </body>
