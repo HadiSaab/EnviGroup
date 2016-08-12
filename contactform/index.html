@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>EnviGroup</title>
+    <link rel="stylesheet" href="css/envigroup.css" />
+
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="form.html">Enquiries</a></li>
+    </ul>
+
+    <div class="centered">
+        <IMG class="displayed" src="Logo.jpg" align="middle" alt="Envigroup logo" style="width:200px;height:84px;">
+
+        <form action="mail.php" method="POST">
+
+            <div style="text-align:center;">
+                <p>Full Name</p>
+                <input type="text" name="name" class="contactfield">
+
+                <p>Email</p>
+                <input type="text" name="email" class="contactfield">
+
+                <p>Contact Number</p>
+                <input type="text" name="phone" class="contactfield">
+            </div>
+
+            <p>Message</p>
+            <textarea name="message" rows="8" cols="50"></textarea>
+            <br />
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit">
+            </form>
+            <div style="text-align:center;">
+                <input type="submit" value="Send">
+                <input type="reset" value="Clear">
+            </div>
+
+        </form>
+    </div>
+    <div class="footer"></div>
+
+</body>
+
+</html>
